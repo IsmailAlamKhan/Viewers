@@ -1,5 +1,7 @@
 import React from 'react';
-import { NavBar, Svg, Icon, IconButton } from '../../../components';
+import { Icon, IconButton, NavBar } from '../../../components';
+
+import logo from '../../../assets/logo.png';
 
 const Header = () => {
   return (
@@ -16,7 +18,10 @@ const Header = () => {
               href="#"
               className="ml-4"
             >
-              <Svg name="logo-ohif" />
+              {/* <Svg name="logo-ohif" /> */}
+              {/* <img src="https://www.ohif.org/img/logo.svg" alt="NeuroCare.AI Logo" /> */}
+              <img src={logo} alt="NeuroCare.AI Logo" />
+              Powered by NeuroCare.AI
             </a>
           </div>
         </div>
